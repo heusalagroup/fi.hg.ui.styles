@@ -1,0 +1,65 @@
+// Copyright (c) 2021. Sendanor <info@sendanor.fi>. All rights reserved.
+
+@import "src/nor/ui/styles/variables";
+
+// Neumorphism buttons
+
+$neumorphism-button-light-shadow-color  : $light-shadow-color;
+$neumorphism-button-dark-shadow-color   : $dark-shadow-color;
+$neumorphism-button-border-color        : $border-color;
+$neumorphism-button-border-size         : $border-size;
+$neumorphism-button-box-shadow          : 6px 6px 16px 0 $neumorphism-button-dark-shadow-color, -6px -6px 26px 0 $neumorphism-button-light-shadow-color;
+$neumorphism-button-border              : $neumorphism-button-border-size solid $neumorphism-button-border-color;
+$neumorphism-button-border-radius       : $border-radius;
+
+// Neumorphism fields
+
+$neumorphism-field-light-shadow-color  : $light-shadow-color;
+$neumorphism-field-dark-shadow-color   : $dark-shadow-color;
+$neumorphism-field-border-color        : $border-color;
+$neumorphism-field-border-size         : $border-size;
+$neumorphism-field-box-shadow          : 6px 6px 16px 0 $neumorphism-field-dark-shadow-color, -6px -6px 26px 0 $neumorphism-field-light-shadow-color;
+$neumorphism-field-border              : $neumorphism-field-border-size solid $neumorphism-field-border-color;
+$neumorphism-field-border-radius       : $border-radius;
+
+
+.button.button-style-NEUMORPHISM {
+  box-shadow       : $neumorphism-button-box-shadow;
+  border           : $neumorphism-button-border;
+  border-radius    : $neumorphism-button-border-radius;
+}
+
+.field.field-style-NEUMORPHISM {
+
+  box-shadow       : $neumorphism-field-box-shadow;
+  border           : $neumorphism-field-border;
+  border-radius    : $neumorphism-field-border-radius;
+
+  & > .field-label {
+    color: $field-label-text-color;
+  }
+
+  & > .field-input {
+    background-color : transparent;
+  }
+
+  &.field-state-invalid {
+    border            : $field-border-invalid;
+  }
+
+}
+
+.nor-modal-container.nor-modal-container-style-NEUMORPHISM {
+
+  &.nor-modal-container-overlay-enabled {
+    background-color: #2f222219;
+  }
+
+  & > .nor-modal-container-content {
+    background-color : #efeeee;
+    box-shadow       : $neumorphism-field-box-shadow;
+    border           : $neumorphism-field-border;
+    border-radius    : $neumorphism-field-border-radius;
+  }
+
+}
