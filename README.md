@@ -1,4 +1,4 @@
-# @sendanor/ui-components
+# @sendanor/ui-styles
 
 Our enterprise library for ReactJS UI elements.
 
