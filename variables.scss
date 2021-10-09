@@ -11,6 +11,9 @@ $border-color       : rgba(255,255,255,0.20);
 $border-size        : 1px;
 $border-radius      : 12px;
 
+$light-shadow-color-reddish : rgba(250,210,200,0.83);
+$dark-shadow-color-reddish  : rgba(217,210,200,0.51);
+
 // Loader
 
 $loader-background-color   : #00000011;
@@ -24,7 +27,7 @@ $field-border-size       : 1px;
 $field-border-style      : solid;
 $field-border-color      : #00000022;
 
-$field-border-size-invalid  : 3px;
+$field-border-size-invalid  : 1px;
 $field-border-style-invalid : solid;
 $field-border-color-invalid : rgba(255, 0, 0, 0.50);
 
