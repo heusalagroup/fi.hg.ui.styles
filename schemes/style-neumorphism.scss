@@ -35,52 +35,5 @@ $neumorphism-field-border-radius-invalid  : $neumorphism-field-border-radius;
 $neumorphism-field-box-shadow-invalid     : 6px 6px 16px 0 $neumorphism-field-dark-shadow-color-reddish, -6px -6px 26px 0 $neumorphism-field-light-shadow-color-reddish;
 $neumorphism-field-border-invalid         : $neumorphism-field-border-size-invalid $neumorphism-field-border-style-invalid $neumorphism-field-border-color-invalid;
 
-.button.button-style-NEUMORPHISM {
-  box-shadow       : $neumorphism-button-box-shadow;
-  border           : $neumorphism-button-border;
-  border-radius    : $neumorphism-button-border-radius;
-}
-
-.field.field-style-NEUMORPHISM {
-
-  box-shadow       : $neumorphism-field-box-shadow;
-  border           : $neumorphism-field-border;
-  border-radius    : $neumorphism-field-border-radius;
-
-  & > .field-label {
-    color: $field-label-text-color;
-  }
-
-  & > .field-input {
-    background-color : transparent;
-  }
-
-  & > :focus.field-input,
-  & > :focus-visible.field-input {
-    background-color : transparent;
-    border           : none;
-    outline          : none;
-  }
-
-  &.field-state-invalid {
-    box-shadow       : $neumorphism-field-box-shadow-invalid;
-    border           : $neumorphism-field-border-invalid;
-    border-radius    : $neumorphism-field-border-radius-invalid;
-  }
-
-}
-
-.nor-modal-container.nor-modal-container-style-NEUMORPHISM {
-
-  &.nor-modal-container-overlay-enabled {
-    background-color: #2f222219;
-  }
-
-  & > .nor-modal-container-content {
-    background-color : #efeeee;
-    box-shadow       : $neumorphism-field-box-shadow;
-    border           : $neumorphism-field-border;
-    border-radius    : $neumorphism-field-border-radius;
-  }
-
-}
+$neumorphism-modal-overlay-background-color : #2f222219;
+$neumorphism-modal-content-background-color : #efeeee;

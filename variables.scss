@@ -1,8 +1,16 @@
 // Copyright (c) 2021. Sendanor <info@sendanor.fi>. All rights reserved.
 
-$icon-height: 1em;
+$ux-white-color  : #f3f3f3;
+$ux-black-color  : #000000;
+$ux-grey-color   : #737373;
+$ux-blue-color   : #0f51c4;
+$ux-green-color  : #52ad52;
+$ux-red-color    : #ff0000;
+$ux-yellow-color : #ffff00;
+$ux-cyan-color   : #1391d5;
+$ux-transparent  : transparent;
 
-$ux-black-color: #000000;
+$icon-height: 1em;
 
 // Shadows
 $light-shadow-color : rgba(255,255,255,0.83);
@@ -39,3 +47,26 @@ $field-margin            : 1em 2px;
 $field-border-radius     : 0.5em;
 
 $field-border-invalid    : $field-border-size-invalid $field-border-style-invalid $field-border-color-invalid;
+
+// Buttons
+
+$button-primary-text-color         : $ux-white-color;
+$button-primary-background-color   : $ux-blue-color;
+
+$button-secondary-text-color       : $ux-white-color;
+$button-secondary-background-color : $ux-grey-color;
+
+$button-success-text-color         : $ux-white-color;
+$button-success-background-color   : $ux-green-color;
+
+$button-danger-text-color          : $ux-white-color;
+$button-danger-background-color    : $ux-red-color;
+
+$button-warning-text-color         : $ux-white-color;
+$button-warning-background-color   : $ux-yellow-color;
+
+$button-info-text-color            : $ux-white-color;
+$button-info-background-color      : $ux-cyan-color;
+
+$button-link-text-color            : $ux-blue-color;
+$button-link-background-color      : $ux-transparent;
