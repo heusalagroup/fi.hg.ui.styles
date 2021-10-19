@@ -2,6 +2,23 @@
 
 @import "src/nor/ui/styles/schemes/index";
 
+$field-label-min-width : 5em;
+
+.theme-dark {
+
+  input {
+    background-color: #9d9d9d;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:active,
+  input:-webkit-autofill:focus {
+    background-color: #9d9d9d;
+  }
+
+}
+
 // BUTTON STYLES
 
 .button.button-primary   {
@@ -62,7 +79,6 @@
 
 // FLAT THEME
 
-// Buttons
 .button.button-style-FLAT {
 
   background-color : $flat-button-background-color;
@@ -70,7 +86,6 @@
 
 }
 
-// Fields
 .field.field-style-FLAT {
 
   background-color  : $field-background-color;
@@ -78,7 +93,7 @@
   border-radius     : $field-border-radius;
 
   & > .field-label {
-    color: $field-label-text-color;
+    color: $field-label-text-color-light-mode;
   }
 
   &.field-state-invalid {
@@ -106,40 +121,23 @@
 
 // NEUMORPHISM THEME
 
-// Buttons
 .button.button-style-NEUMORPHISM {
 
-  box-shadow       : $neumorphism-button-box-shadow;
-  border           : $neumorphism-button-border;
   border-radius    : $neumorphism-button-border-radius;
 
 }
 
-// Fields
 .field.field-style-NEUMORPHISM {
 
-  box-shadow       : $neumorphism-field-box-shadow;
-  border           : $neumorphism-field-border;
   border-radius    : $neumorphism-field-border-radius;
-
-  & > .field-label {
-    color: $field-label-text-color;
-  }
-
-  & > .field-input {
-    background-color : transparent;
-  }
 
   & > :focus.field-input,
   & > :focus-visible.field-input {
-    background-color : transparent;
     border           : none;
     outline          : none;
   }
 
   &.field-state-invalid {
-    box-shadow       : $neumorphism-field-box-shadow-invalid;
-    border           : $neumorphism-field-border-invalid;
     border-radius    : $neumorphism-field-border-radius-invalid;
   }
 
@@ -148,14 +146,84 @@
 .nor-modal-container.nor-modal-container-style-NEUMORPHISM {
 
   &.nor-modal-container-overlay-enabled {
-    background-color: $neumorphism-modal-overlay-background-color;
   }
 
   & > .nor-modal-container-content {
-    background-color : $neumorphism-modal-content-background-color;
-    box-shadow       : $neumorphism-field-box-shadow;
-    border           : $neumorphism-field-border;
     border-radius    : $neumorphism-field-border-radius;
   }
 
 }
+
+.theme-light {
+
+  .button.button-style-NEUMORPHISM {
+
+    box-shadow       : $light-neumorphism-button-box-shadow;
+    border           : $light-neumorphism-button-border;
+
+  }
+
+  .field.field-style-NEUMORPHISM {
+
+    box-shadow       : $light-neumorphism-field-box-shadow;
+    border           : $light-neumorphism-field-border;
+
+    & > .field-label {
+      color: $field-label-text-color-light-mode;
+    }
+
+    & > .field-input {
+      background-color : $field-input-background-color-light-mode;
+    }
+
+    & > :focus.field-input,
+    & > :focus-visible.field-input {
+      background-color : $field-input-background-color-light-mode;
+    }
+
+    &.field-state-invalid {
+      box-shadow       : $light-neumorphism-field-box-shadow-invalid;
+      border           : $light-neumorphism-field-border-invalid;
+    }
+
+  }
+
+}
+
+
+.theme-dark {
+
+  .button.button-style-NEUMORPHISM {
+
+    box-shadow       : $dark-neumorphism-button-box-shadow;
+    border           : $dark-neumorphism-button-border;
+
+  }
+
+  .field.field-style-NEUMORPHISM {
+
+    box-shadow       : $dark-neumorphism-field-box-shadow;
+    border           : $dark-neumorphism-field-border;
+
+    & > .field-label {
+      color: $field-label-text-color-dark-mode;
+    }
+
+    & > .field-input {
+      background-color : $field-input-background-color-dark-mode;
+    }
+
+    & > :focus.field-input,
+    & > :focus-visible.field-input {
+      background-color : $field-input-background-color-dark-mode;
+    }
+
+    &.field-state-invalid {
+      box-shadow       : $dark-neumorphism-field-box-shadow-invalid;
+      border           : $dark-neumorphism-field-border-invalid;
+    }
+
+  }
+
+}
+

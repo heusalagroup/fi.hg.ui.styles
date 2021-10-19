@@ -13,9 +13,14 @@ $ux-transparent  : transparent;
 $icon-height: 1em;
 
 // Shadows
-$light-shadow-color : rgba(255,255,255,0.83);
-$dark-shadow-color  : rgba(217,210,200,0.51);
-$border-color       : rgba(255,255,255,0.20);
+$light-shadow-color-dark-mode  : rgba(155,155,155,0.83);
+$dark-shadow-color-dark-mode   : rgba(117,110,100,0.51);
+$border-color-dark-mode        : rgba(155,155,155,0.20);
+
+$light-shadow-color-light-mode  : rgba(255,255,255,0.83);
+$dark-shadow-color-light-mode   : rgba(217,210,200,0.51);
+$border-color-light-mode        : rgba(255,255,255,0.20);
+
 $border-size        : 1px;
 $border-radius      : 12px;
 
@@ -40,7 +45,13 @@ $field-border-style-invalid : solid;
 $field-border-color-invalid : rgba(255, 0, 0, 0.50);
 
 $field-background-color  : #00000009;
-$field-label-text-color  : #444444;
+$field-label-text-color-light-mode: #444444;
+$field-label-text-color-dark-mode: #f0f0f0;
+
+$field-input-background-color-light-mode: #e9e9e9;
+$field-input-background-color-dark-mode: #999999;
+
+
 $field-border            : $field-border-size $field-border-style $field-border-color;
 $field-padding           : 0.5em;
 $field-margin            : 1em 2px;
