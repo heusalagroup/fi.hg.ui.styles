@@ -19,64 +19,6 @@ $field-label-min-width : 5em;
 
 }
 
-// BUTTON STYLES
-
-.button.button-primary   {
-  color: $button-primary-text-color;
-  background-color: $button-primary-background-color;
-  & > .icon > svg {
-    fill: $button-primary-text-color;
-  }
-}
-
-.button.button-secondary {
-  color: $button-secondary-text-color;
-  background-color: $button-secondary-background-color;
-  & > .icon > svg {
-    fill: $button-secondary-text-color;
-  }
-}
-
-.button.button-success   {
-  color: $button-success-text-color;
-  background-color: $button-success-background-color;
-  & > .icon > svg {
-    fill: $button-success-text-color;
-  }
-}
-
-.button.button-danger    {
-  color: $button-danger-text-color;
-  background-color: $button-danger-background-color;
-  & > .icon > svg {
-    fill: $button-danger-text-color;
-  }
-}
-
-.button.button-warning   {
-  color: $button-warning-text-color;
-  background-color: $button-warning-background-color;
-  & > .icon > svg {
-    fill: $button-warning-text-color;
-  }
-}
-
-.button.button-info      {
-  color: $button-info-text-color;
-  background-color: $button-info-background-color;
-  & > .icon > svg {
-    fill: $button-info-text-color;
-  }
-}
-
-.button.button-link      {
-  color: $button-link-text-color;
-  background-color: $button-link-background-color;
-  & > .icon > svg {
-    fill: $button-link-text-color;
-  }
-}
-
 // FLAT THEME
 
 .button.button-style-FLAT {
@@ -227,3 +169,60 @@ $field-label-min-width : 5em;
 
 }
 
+// BUTTON STYLES
+
+.button.button-primary   {
+  color: $button-primary-text-color;
+  background-color: $button-primary-background-color;
+  & > .icon > svg {
+    fill: $button-primary-text-color;
+  }
+}
+
+.button.button-secondary {
+  color: $button-secondary-text-color;
+  background-color: $button-secondary-background-color;
+  & > .icon > svg {
+    fill: $button-secondary-text-color;
+  }
+}
+
+.button.button-success   {
+  color: $button-success-text-color;
+  background-color: $button-success-background-color;
+  & > .icon > svg {
+    fill: $button-success-text-color;
+  }
+}
+
+.button.button-danger    {
+  color: $button-danger-text-color;
+  background-color: $button-danger-background-color;
+  & > .icon > svg {
+    fill: $button-danger-text-color;
+  }
+}
+
+.button.button-warning   {
+  color: $button-warning-text-color;
+  background-color: $button-warning-background-color;
+  & > .icon > svg {
+    fill: $button-warning-text-color;
+  }
+}
+
+.button.button-info      {
+  color: $button-info-text-color;
+  background-color: $button-info-background-color;
+  & > .icon > svg {
+    fill: $button-info-text-color;
+  }
+}
+
+.button.button-link      {
+  color: $button-link-text-color;
+  background-color: $button-link-background-color;
+  & > .icon > svg {
+    fill: $button-link-text-color;
+  }
+}
